@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Carter Developments</title>
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <img src="img/Carter Developments-LOGO-A.jpg" alt="logo" class="nav__logo" />
+            <ul class="nav__links">
+                <li class="nav__item">
+                    <a class="nav__link" href="#section--1">About Me</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#section--2">Projects</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link open__modal">Contact Me</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__container">
+            <div class="header-content">
+                <h1 class="header-title">Andrew <br> Carter</h1>
+                <h3 class="header-subtitle">Software Developer</h3>
+            </div>
+            <div class="header-image">
+
+            </div>
+        </div>
+    </header>
+    <section class="section" id="section--1">
+        <div class="project__tab-container">
+            <div class="projects__btns">
+                <button class="btn projects__tab projects__tab--1" data-tab="1"><span>1</span>Portfolio Website</button>
+                <button class="btn projects__tab projects__tab--2" data-tab="2"><span>2</span>Forkify</button>
+                <button class="btn projects__tab projects__tab--3" data-tab="3"><span>3</span>Number Guessing</button>
+            </div>
+            <div class="projects__content projects__content--1 projects__content--active">
+                <img src="logo" alt="logo" class="projects-img" />
+                <div class="projects__description">
+                    <h2 class="projects__description-title">Portfolio Website</h2>
+                    <p class="projects__description-info">
+                        The current website CarterDevelopments.tech was coded in its entirety by myself. It was written
+                        in HTML, CSS, and JavaScript and it utilizes mateomatics API for weather information. You can
+                        see the source code by clicking the button below.
+                    </p>
+                    <button class="btn projects__description-btn portfolio-btn">Source Code</button>
+                </div>
+                <div class="projects__content projects__content--2">
+                    <img src="Forkify" alt="Forkify website" class="projects-img" />
+                    <div class="projects__description">
+                        <h2 class="projects__description-title">Forkify</h2>
+                        <p class="projects__description-info">
+                            The Forkify website was a website I created during Jonas Schmedtmann's Javascript Udemy
+                            course. The API, CSS and HTML was written by him but the JavaScript and functionality was
+                            written by me. You can see the source code by clicking the button below.
+                        </p>
+                        <button class="btn projects__description-btn forkify-btn">Source Code</button>
+                    </div>
+                </div>
+                <div class="projects__content projects__content--3">
+                    <img src="Number Guessing" alt="Number guessing website" class="projects-img" />
+                    <div class="projects__description">
+                        <h2 class="projects__description-title">Number Guessing</h2>
+                        <p class="projects__description-info">
+                            The number guessing website was also a website I created during Jonas Schmedtmann's
+                            Javascript Udemy course. The CSS and HTML was written by him but the JavaScript and
+                            functionality was written by me. You can see the source code by clicking the button below.
+                        </p>
+                        <button class="btn projects__description-btn number__guessing-btn">Source Code</button>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="section" id="section--2">
+        <div class="slider">
+            <div class="slide">
+                <h2 class="slide__title">Who am I</h2>
+                <p class="slide__content">My name is Andrew Carter and I am a recent graduate of Kansas State's full
+                    stack development program. I have also taken certain Udemy courses such as Jonas Schmedtmann's
+                    Javascript course as well as others. <br> I have spent the last year and a half learning software
+                    development skills with the goal of acquiring a job where I can build creative, unique projects that
+                    showcase the beauty of dynamic code. <br> I am a self-motivated, collaborative, ambitious individual
+                    that is eager to find the right team to be part of.</p>
+            </div>
+            <div class="slide">
+                <h2 class="slide__title">Languages</h2>
+                <p class="slide__content">I have learned many languages in the last year and a half. I know different
+                    languages to different degrees so I will categorize what I know in three different buckets: what I'm
+                    comfortable with, what I'm familiar with, and what I've studied (but haven't used on any of my own
+                    projects outside of class) <br> <span class="bold">What I'm comfortable with:</span> JavaScript,
+                    HTML, CSS, SCSS <br> <span class="bold">What I'm familiar with:</span>React, SQL, MongoDB, NodeJS
+                    <br> <span class="bold">What I've Studied:</span> Python, TypeScript
+                </p>
+            </div>
+            <div class="slide">
+                <h2 class="slide__title">Tools and Concepts</h2>
+                <p class="slide__content">I have used Github as my version control ever since I started so that is one
+                    of my strengths. Other tools I know well are VS Code, Postman, Parcel, and NPM. I have studied and
+                    utilized several
+                    concepts such as OOP, MVC, DRY and clean code, consuming API calls, publisher-subscriber pattern.
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <ul class="footer__nav">
+            <li class="footer__item">
+                <a href="Github link">
+                    <img src="" alt="Github logo">
+                </a>
+            </li>
+            <li class="footer__item">
+                <a href="LinkdIn link">
+                    <img src="" alt="LinkdIn logo">
+                </a>
+            </li>
+            <li class="footer__item">
+                Email: and.carter95@gmail.com
+            </li>
+            <li class="footer__item">
+                Phone: (573) 607-0224
+            </li>
+        </ul>
+    </footer>
+    <div class="modal hidden">
+
+    </div>
+</body>
+
+</html>

@@ -31,13 +31,13 @@ body {
   color: #444;
   line-height: 1.9;
   background-color: #e9ecec;
-  /* scroll-snap-type: y mandatory;
-  overflow-y: scroll; */
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
 }
 
-/* body > .scroll-snap{
+.scroll-snap{
   scroll-snap-align: start;
-} */
+}
 
 .hidden {
   visibility: hidden;
@@ -467,6 +467,9 @@ body {
 
 .modal__message {
   height: 10em;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
 }
 
 .modal__form button {

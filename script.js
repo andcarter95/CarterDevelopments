@@ -37,7 +37,6 @@ const loadWeather = async function (e) {
     //Geolocation
     const pos = await getPosition();
     const { latitude, longitude } = pos.coords;
-    console.log(latitude, longitude);
 
     // API call
     const APIRes = await fetch(
@@ -45,7 +44,6 @@ const loadWeather = async function (e) {
     );
     if (!APIRes.ok) throw new Error("Problem getting location data");
     const APIData = await APIRes.json();
-    console.log(APIData);
     const markup = `
         ${Math.round(APIData.current.temp_f)}°
     `;
@@ -61,7 +59,6 @@ const openModal = function (e) {
   e.preventDefault();
   modal.classList.remove("hidden");
   overlay.classList.remove("hidden");
-  document.contactForm.reset()
 };
 
 const closeModal = function () {
@@ -83,9 +80,14 @@ document.addEventListener("keydown", function (e) {
 // Nav scroll on click
 document.querySelector(".nav__links").addEventListener("click", function (e) {
   e.preventDefault();
+  const smoothScroll = function(id){
+    if(!id) return
+    id.scrollIntoView({behavior:"smooth" })
+  }
   if (e.target.classList.contains("nav__link")) {
     const id = e.target.getAttribute("href");
-    document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+    smoothScroll(document.querySelector(id))
+    
   }
 });
 
